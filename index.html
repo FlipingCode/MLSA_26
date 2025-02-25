@@ -1,10 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello World</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Art Portfolio</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <h2>github</h2>
+
+    <header>
+        <h1>My Art Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate artist exploring various forms of creative expression. 
+            I find inspiration in everyday life, nature, and the human experience. 
+            My work aims to evoke emotions and tell stories through visual language.
+        </p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            
+            <a href="https://ibb.co/qMR2rnB"><img src="https://i.ibb.co/zsjXwtD/i1.jpg" alt="Art Piece 2" border="0"></a>
+            <a href="https://ibb.co/qMR2rnB"><img src="https://i.ibb.co/0jfzGXq/i2.jpg" alt="Art Piece 2" border="0"></a>
+            <a href="https://ibb.co/G2ScybW"><img src="https://i.ibb.co/WyJgZYk/i3.jpg" alt="Art Piece 3" border="0"></a>
+            <a href="https://ibb.co/MPWg41g"><img src="https://i.ibb.co/RQZgm6g/i4.jpg" alt="Art Piece 4" border="0"></a>
+            <a href="https://ibb.co/3FZkYj0"><img src="https://i.ibb.co/SmCJ7MK/i5.jpg" alt="Art Piece 5" border="0"></a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            You can reach me at: 
+            <a href="mailto:your_email@example.com">your_email@example.com</a>
+        </p>
+        <p>
+            Or find me on social media: 
+            <a href="https://www.instagram.com/your_username">Instagram</a>
+        </p>
+    </section>
+
+    <footer>
+        &copy; 2023 Your Name
+    </footer>
+
 </body>
 </html>
